@@ -1,0 +1,48 @@
+.aboutme
+    padding: 120px 0 120px 0
+    min-height: 600px
+    &__name
+        padding-top: 10px
+    &__photo
+        grid-row: 1/3
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__divider
+        margin-top: 5px
+        width: 75px
+        height: 3px
+        background-color: $main-color
+    &__description
+        margin-top: 20px  
+    &__skills
+        display: grid
+        row-gap: 20px
+        column-gap: 50px
+        grid-template-columns: repeat(2, minmax(auto, 260px))  
+        grid-template-rows:  minmax(auto, 120px)
+.skill
+    &__item
+        height: 120px
+        display: flex
+        gap: 20px
+    &__description
+        font-size: 12px
+        line-height: 18px
+        margin-top: 6px
+    &__icon
+        position: relative
+        @include before_circle
+        &:before
+            top: -12px
+            left: -16px
+    
+
+
+.grid-container
+    column-gap: 50px
+    row-gap: 40px
+    display: grid
+    grid-template-columns: minmax(250px, 400px) minmax(auto, 570px)
+    grid-template-rows: 250px 350px

@@ -1,0 +1,45 @@
+.title
+    margin-top: 20px
+    font-weight: 700
+    font-size: 48px
+    color: #ffffff
+    line-height: 60px
+    &_black
+        color: #000000 
+    &_mini
+        font-size: 14px
+        line-height: 14px
+    &__name
+        font-size: 36px
+    &_center
+        text-align: center
+    &_sz20
+        font-size: 20px
+    &_rating
+        padding: 11px 0 0 13px
+        margin-top: 0
+        position: relative
+        @include before_circle
+        &:before 
+            top: 0
+            left: 0
+    &_price
+        margin-top: 0
+.subtitle
+    // padding-top: 430px
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+    color: #ffffff
+    position: relative
+    z-index: 2
+    @include before_circle
+    &_black
+        color: #000000 
+    &_center
+        text-align: center
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &_pad
+        padding-left: 12px

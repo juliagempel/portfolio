@@ -1,0 +1,22 @@
+.price
+    min-height: 470px
+    &__wrapper
+        padding: 60px 50px 0 50px
+        display: grid
+        justify-content: space-around
+        grid-template-columns: repeat(2, minmax(auto, 340px))
+        grid-template-rows: repeat(3, 44px)
+        row-gap: 35px
+    &__header
+        display: flex
+        justify-content: space-between
+        position: relative
+        @include before_circle
+        &:before 
+            width: 15px
+            height: 15px
+            left: -27px
+            top: 0
+    &__body
+        margin-top: 10px
+        font-size: 12px
